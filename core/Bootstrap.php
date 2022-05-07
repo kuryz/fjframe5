@@ -11,8 +11,8 @@ class Bootstrap
 		$this->router = new Router();
 	}
 
-	public function run($value='')
+	public function run()
 	{
-		# code...
+		$this->router->resolve();
 	}
 }
