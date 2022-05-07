@@ -1,0 +1,15 @@
+{
+    "name": "frank-james/fjframe5",
+    "authors": [
+        {
+            "name": "kuryz",
+            "email": "tj.frankiee@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
