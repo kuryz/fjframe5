@@ -5,14 +5,22 @@ namespace app\core;
  */
 class Bootstrap
 {
+	public static string $ROOT_DIR;
 	public Router $router;
-	public function __construct()
+	public Request $request;
+	public Response $response;
+	public static Bootstrap $app;
+	public function __construct($rootPath)
 	{
-		$this->router = new Router();
+		self::$ROOT_DIR = $rootPath;
+		self::$app = $this;
+		$this->request = new Request();
+		$this->response = new Response();
+		$this->router = new Router($this->request, $this->response);
 	}
 
 	public function run()
 	{
-		$this->router->resolve();
+		echo $this->router->resolve();
 	}
 }
