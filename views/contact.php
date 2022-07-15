@@ -1,7 +1,7 @@
 
 <div class="col-md-6 offset-md-3">
 	<h1>Contact</h1>
-	<form>
+	<form action="contact" method="post">
 		<div class="mb-3">
 		    <label for="exampleSubject" class="form-label">Subject</label>
 		    <input type="text" class="form-control" id="exampleSubject">
